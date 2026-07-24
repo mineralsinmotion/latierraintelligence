@@ -619,8 +619,6 @@ p {
 .research-profile {
   padding: 28px;
 
-  background: var(--paper);
-
   border-left: 4px solid var(--copper);
 }
 
