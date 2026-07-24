@@ -254,19 +254,29 @@ p {
 /* =========================================================
    HERO
    ========================================================= */
-
 .hero {
-  background:
+  position: relative;
+  overflow: hidden;
+
+  background-color: var(--paper-light);
+
+  background-image:
     linear-gradient(
-      110deg,
-      var(--paper-light) 0%,
-      var(--paper-light) 65%,
-      var(--paper) 100%
-    );
+      90deg,
+      rgba(250, 248, 242, 1) 0%,
+      rgba(250, 248, 242, 0.98) 28%,
+      rgba(250, 248, 242, 0.90) 42%,
+      rgba(250, 248, 242, 0.58) 62%,
+      rgba(250, 248, 242, 0.18) 100%
+    ),
+    url("americasrelieffaded.png");
+
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
 
   border-bottom: 1px solid var(--border);
 }
-
 
 .hero .page-container {
   padding-top: 92px;
