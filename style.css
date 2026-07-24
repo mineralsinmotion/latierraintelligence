@@ -291,15 +291,12 @@ p {
 
 .hero h2 {
   max-width: 1080px;
-
   margin: 0 0 27px;
 
-  font-size: clamp(1.6rem, 2.2vw, 2.4rem);
+  font-size: 2.4rem;
 
-  line-height: 1.02;
-
-  letter-spacing: -1.5px;
-}
+  line-height: 1.12;
+  letter-spacing: -0.5px;
 
 
 .hero h2 span {
