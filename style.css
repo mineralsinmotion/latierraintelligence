@@ -1,5 +1,19 @@
 /* La Tierra Resource Intelligence */
 
+:root {
+  --navy: #1d2b36;
+  --navy-deep: #13202a;
+  --slate: #4f606c;
+  --copper: #a66732;
+  --ochre: #c4913f;
+  --paper: #f6f2e9;
+  --paper-light: #fbf9f4;
+  --text: #252a2e;
+  --muted: #68727a;
+  --border: #d8d2c7;
+  --white: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,93 +25,298 @@ html {
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #202520;
-  background: #f7f6f2;
-  line-height: 1.6;
+  color: var(--text);
+  background: var(--paper-light);
+  line-height: 1.7;
 }
 
+/* Header */
+
 header {
-  background: #26352d;
-  color: white;
-  padding: 60px 8% 35px;
+  background: var(--navy);
+  color: var(--white);
+  padding: 42px 7% 24px;
+  border-bottom: 4px solid var(--copper);
 }
 
 header h1 {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 3rem;
+  font-size: clamp(2.3rem, 4vw, 4rem);
   font-weight: normal;
   letter-spacing: 0.5px;
 }
 
 header p {
-  margin: 12px 0 30px;
-  font-size: 1.15rem;
-  color: #e2e6e2;
+  max-width: 850px;
+  margin: 12px 0 28px;
+  font-size: 1.12rem;
+  color: #d8e0e5;
 }
+
+/* Navigation */
 
 nav {
   display: flex;
-  gap: 30px;
+  gap: 28px;
   flex-wrap: wrap;
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  padding-top: 18px;
 }
 
 nav a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: bold;
-  letter-spacing: 0.3px;
+  font-size: 0.94rem;
+  font-weight: 600;
+  letter-spacing: 0.25px;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  color: #f0c27f;
+  border-bottom-color: var(--copper);
 }
 
+/* Main page */
+
 main {
-  max-width: 1100px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 60px 8%;
+  padding: 56px 7% 80px;
 }
 
 section {
-  padding: 35px 0;
-  border-bottom: 1px solid #d6d8d4;
+  padding: 52px 0;
+  border-bottom: 1px solid var(--border);
 }
 
 section:last-child {
   border-bottom: none;
 }
 
-h2 {
-  margin-top: 0;
+/* Headings */
+
+h2,
+h3 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2rem;
   font-weight: normal;
-  color: #26352d;
+  color: var(--navy);
+}
+
+h2 {
+  margin: 0 0 20px;
+  font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+h3 {
+  margin: 34px 0 12px;
+  font-size: 1.45rem;
 }
 
 section p {
-  max-width: 750px;
+  max-width: 820px;
+  margin: 0 0 18px;
   font-size: 1.05rem;
+}
+
+/* Lists */
+
+ul {
+  max-width: 820px;
+  padding-left: 1.35rem;
+}
+
+li {
+  margin-bottom: 7px;
+}
+
+/* Links */
+
+a {
+  color: var(--copper);
+}
+
+a:hover {
+  color: var(--navy);
+}
+
+/* Buttons */
+
+.button,
+.button-secondary {
+  display: inline-block;
+  margin-top: 14px;
+  margin-right: 10px;
+  padding: 12px 20px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+}
+
+.button {
+  background: var(--copper);
+  color: var(--white);
+  border: 1px solid var(--copper);
+}
+
+.button:hover {
+  background: #8f5528;
+  color: var(--white);
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--copper);
+  border: 1px solid var(--copper);
+}
+
+.button-secondary:hover {
+  background: var(--paper);
+  color: var(--navy);
+}
+
+/* Subtle section emphasis */
+
+#research,
+#reports,
+#services {
+  position: relative;
+}
+
+#research h2::after,
+#reports h2::after,
+#services h2::after,
+#about h2::after,
+#contact h2::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 3px;
+  margin-top: 12px;
+  background: var(--copper);
+}
+
+/* Reports / product-ready area */
+
+#reports {
+  background: var(--paper);
+  margin-left: -7%;
+  margin-right: -7%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+/* About section */
+
+#about p,
+#about ul {
+  max-width: 850px;
+}
+
+#about h3 {
+  color: var(--slate);
+}
+
+/* Contact */
+
+#contact {
+  padding-bottom: 20px;
+}
+
+#contact a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Future construction notice */
+
+.site-notice {
+  background: var(--ochre);
+  color: var(--navy-deep);
+  padding: 10px 7%;
+  text-align: center;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+/* Future cards */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  padding: 26px;
+  box-shadow: 0 8px 20px rgba(19, 32, 42, 0.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--navy);
+}
+
+.card p {
+  font-size: 0.98rem;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 700px) {
   header {
-    padding: 40px 6% 25px;
+    padding: 34px 6% 22px;
   }
 
   header h1 {
-    font-size: 2.2rem;
+    font-size: 2.35rem;
+  }
+
+  header p {
+    font-size: 1rem;
   }
 
   nav {
-    gap: 15px;
+    gap: 14px 20px;
   }
 
   main {
-    padding: 35px 6%;
+    padding: 36px 6% 60px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  #reports {
+    margin-left: -6%;
+    margin-right: -6%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
   }
 }
