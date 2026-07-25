@@ -598,28 +598,61 @@ p {
 
 
 /* =========================================================
-   INDEPENDENCE
+   INDEPENDENCE & INTEGRITY
    ========================================================= */
 
 .independence-block {
   max-width: 1000px;
 
   margin-top: 62px;
-  padding-top: 37px;
+  padding: 34px 38px;
 
-  border-top: 1px solid var(--border);
+  color: var(--text);
+  background: var(--paper);
+
+  border-left: 4px solid var(--copper);
 }
 
 .independence-block h3 {
-  margin-bottom: 14px;
+  margin: 0 0 14px;
 
   font-size: 1.55rem;
 }
 
-.independence-block p {
+.independence-block > p {
+  max-width: 850px;
+
+  margin-bottom: 28px;
+}
+
+.independence-subsection {
   max-width: 900px;
 
+  margin-top: 26px;
+  padding-top: 24px;
+
+  border-top: 1px solid var(--border);
+}
+
+.independence-subsection h4 {
+  margin: 0 0 14px;
+
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+
+.independence-subsection ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.independence-subsection li {
   margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.independence-subsection strong {
+  color: var(--navy);
 }
 
 
