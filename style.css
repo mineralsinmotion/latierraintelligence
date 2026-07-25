@@ -74,6 +74,7 @@ a:hover {
 .header-container {
   width: min(90%, var(--max-width));
   margin: 0 auto;
+
   padding: 38px 0 22px;
 }
 
@@ -135,6 +136,7 @@ a:hover {
 
 .main-nav a:hover {
   color: #efbe78;
+
   border-bottom-color: var(--copper);
 }
 
@@ -280,7 +282,6 @@ p {
   margin: 0 0 27px;
 
   font-size: 2.4rem;
-
   line-height: 1.12;
 
   letter-spacing: -0.5px;
@@ -300,7 +301,6 @@ p {
   color: var(--slate);
 
   font-size: 1.2rem;
-
   line-height: 1.7;
 }
 
@@ -375,7 +375,7 @@ p {
 
 
 /* =========================================================
-   RESEARCH GRID
+   RESEARCH & ANALYSIS CARDS
    ========================================================= */
 
 .research-grid {
@@ -385,6 +385,8 @@ p {
     repeat(3, minmax(0, 1fr));
 
   gap: 25px;
+
+  align-items: stretch;
 }
 
 .research-card {
@@ -413,7 +415,7 @@ p {
 
 
 /* =========================================================
-   REPORTS
+   REPORTS & DATA
    ========================================================= */
 
 .reports-section {
@@ -432,8 +434,10 @@ p {
   background: var(--white);
 
   border: 1px solid var(--border);
-
   border-left: 5px solid var(--copper);
+
+  box-shadow:
+    0 8px 22px rgba(16, 33, 46, 0.04);
 }
 
 .report-panel-text {
@@ -461,7 +465,7 @@ p {
 
 
 /* =========================================================
-   SERVICES
+   CONSULTING & RESEARCH SERVICES
    ========================================================= */
 
 .services-grid {
@@ -593,15 +597,9 @@ p {
 }
 
 
-/* Research profile retained in case it is reused later */
-
-.research-profile {
-  padding: 0 0 0 24px;
-
-  background: transparent;
-
-  border-left: 4px solid var(--copper);
-}
+/* =========================================================
+   INDEPENDENCE
+   ========================================================= */
 
 .independence-block {
   max-width: 1000px;
@@ -803,12 +801,6 @@ footer {
 
   .about-sidebar {
     grid-template-columns: 1fr;
-  }
-
-  .research-profile {
-    padding: 0 0 0 20px;
-
-    background: transparent;
   }
 
   .footer-container {
