@@ -177,7 +177,7 @@ h3 {
 h2 {
   margin: 0;
 
-  font-size: clamp(2.1rem, 3.5vw, 3.15rem);
+  font-size: clamp(1.75rem, 2.5vw, 2.35rem);
 
   line-height: 1.15;
 }
