@@ -103,7 +103,30 @@ a:hover {
   font-size: 1.2rem;
   line-height: 1.55;
 }
+/* =========================================================
+   LANGUAGE SWITCHER
+   ========================================================= */
 
+.language-switcher {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.language-switcher a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.language-switcher span {
+  margin: 0 8px;
+  color: var(--copper);
+}
+
+.language-switcher a:hover {
+  color: #efbe78;
+}
 
 /* =========================================================
    NAVIGATION
