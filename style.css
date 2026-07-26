@@ -419,8 +419,11 @@ p {
 
 .service-inquiry {
   max-width: 760px;
+
   margin-top: 44px;
+  margin-left: 28px;
   padding-top: 28px;
+
   border-top: 1px solid var(--border);
 }
 
