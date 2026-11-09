@@ -744,3 +744,8 @@ footer {
     gap: 8px;
   }
 }
+
+/* Widen homepage introductory paragraphs */
+.hero .hero-description {
+    max-width: 850px;
+}
